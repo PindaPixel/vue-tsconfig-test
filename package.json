@@ -1,11 +1,14 @@
 {
-  "name": "xd",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "check": "vue-tsc --noEmit -p tsconfig.app.json"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "latest",
+    "vue-tsc": "^2.0.21"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.4.5"
   }
 }

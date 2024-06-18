@@ -1,18 +1,19 @@
 {
     "compilerOptions": {
         "composite": true,
-        "tsBuildInfoFile": "./node_modules/.tmp/test.tsbuildinfo",
+        "tsBuildInfoFile": "./node_modules/.tmp/web.test.tsbuildinfo",
         "esModuleInterop": true,
         "skipLibCheck": true,
         "types": [
             "node"
         ],
-        "lib": []
+        "lib": [
+            "ESNext",
+            "DOM",
+            "DOM.Iterable"
+        ],
     },
     "include": [
-        "src/**/*.test.ts"
-    ],
-    "exclude": [
         "src/**/*.web.test.ts"
     ],
     "references": [

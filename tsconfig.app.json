@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    // Enable latest features
+    "tsBuildInfoFile": "./node_modules/.tmp/app.tsbuildinfo",
     "lib": [
       "ESNext",
       "DOM",
@@ -9,24 +9,13 @@
     ],
     "target": "ESNext",
     "module": "ESNext",
-    "moduleDetection": "force",
-    "allowJs": true,
-    // Bundler mode
     "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
-    // Best practices
     "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    // Some stricter flags (disabled by default)
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
     "types": [],
     "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./src/*"
+        "./src/*",
       ]
     }
   },
@@ -35,6 +24,10 @@
     "src/**/*.vue",
   ],
   "exclude": [
-    "src/**/*.test.ts"
-  ]
+    "src/**/*.test.ts",
+  ],
+  "vueCompilerOptions": {
+    "target": 3.5,
+    "strictTemplates": true
+  }
 }
