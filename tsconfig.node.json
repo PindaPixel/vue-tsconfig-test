@@ -1,0 +1,26 @@
+{
+    // https://github.com/tsconfig/bases/blob/main/bases/node22.json
+    "extends": "@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+        "lib": [
+            "ESNext"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "types": [
+            "node",
+            "resx",
+            "eslint"
+        ],
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "vite.config.*",
+        "eslint.config.js",
+        "vitest.workspace.ts"
+    ]
+}

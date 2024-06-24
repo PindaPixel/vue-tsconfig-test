@@ -1,13 +1,20 @@
 {
+    "include": [],
     "references": [
-        {
-            "path": "tsconfig.test.json"
-        },
         {
             "path": "tsconfig.app.json"
         },
         {
+            "path": "tsconfig.test.json"
+        },
+        {
+            "path": "tsconfig.jsdom.test.json"
+        },
+        {
             "path": "tsconfig.web.test.json"
         },
+        {
+            "path": "tsconfig.node.json"
+        }
     ]
 }
